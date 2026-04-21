@@ -7,7 +7,8 @@ else
   # ============= 同步第三方插件库==============
   # 同步第三方软件仓库run/apk
   echo "🔄 正在同步第三方软件仓库 Cloning apk file repo..."
-  git clone --depth=1 https://github.com/wukongdaily/apk.git /tmp/store-apk-repo
+  #git clone --depth=1 https://github.com/wukongdaily/apk.git /tmp/store-apk-repo
+  git clone --depth=1 https://github.com/yugoooood/apk.git /tmp/store-apk-repo
 
   # 拷贝 run/arm64 下所有 run 文件和apk文件 到 extra-packages 目录
   mkdir -p /home/build/immortalwrt/extra-packages
@@ -48,9 +49,9 @@ PACKAGES=""
 PACKAGES="$PACKAGES curl luci luci-i18n-base-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-firewall-zh-cn"
 PACKAGES="$PACKAGES luci-theme-argon"
-PACKAGES="$PACKAGES luci-app-argon-config"
+#PACKAGES="$PACKAGES luci-app-argon-config"
 PACKAGES="$PACKAGES luci-i18n-argon-config-zh-cn"
-PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
+#PACKAGES="$PACKAGES luci-i18n-diskman-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-package-manager-zh-cn"
 PACKAGES="$PACKAGES luci-i18n-ttyd-zh-cn"
 PACKAGES="$PACKAGES openssh-sftp-server"
